@@ -1,0 +1,69 @@
+<div class="content">
+    <!--<div class="row">-->
+        <div class="col-md-12">
+            <div class="contenido"></div>
+            <h1></h1> <!-- Acceso con e.firma-->           
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="archivo" class="cer">Archivo:</label><br>
+                            <input type="file" class="btn btn-success" id="archivo"  (change)="uploadFile($event)">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="certificado" class="cer">Certificado (.cer)</label><br>
+                            <input type="file" class="btn btn-success" id="certificado"  (change)="uploadFile($event)">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="clave-privada" class="cer">Clave primaria (.key)</label><br>
+                            <input type="file" class="btn btn-success" id="clave-privada"  (change)="uploadFile($event)">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="contraseña" class="Question square fill cer">Contraseña de clave privada:</label> 
+                            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" [(ngModel)] = "requestModel.contra"    >
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <button  class="btn btn-primary enviar" (click)="submit()">Enviar</button>
+                    </div>
+                </div>
+            
+        </div>
+    <!--</div>-->
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Ha ocurrido un error</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{error}}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>

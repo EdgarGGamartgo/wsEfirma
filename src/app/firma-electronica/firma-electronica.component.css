@@ -1,0 +1,40 @@
+h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: .67em 0;
+    top:80;
+    opacity: 100%;
+}
+.contenido{
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+    
+button{
+    overflow: visible;
+}
+    
+    
+label{
+    font-family:sans-serif;
+}  
+      
+.cer{
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    font-size: 120%;    
+}
+    
+.rfc{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+}
+    
+.enviar{
+    top:100;
+}
